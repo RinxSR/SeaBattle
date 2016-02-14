@@ -5,16 +5,23 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import java.util.Random;
+
 public class Main extends ApplicationAdapter {
 	SpriteBatch batch;
 	GameField f1;
 	GameField f2;
 
+	public static Random rand = new Random();
+
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
+
 		f1 = new GameField(30, 40);
 		f2 = new GameField(370, 40);
+
+
 	}
 
 	@Override
